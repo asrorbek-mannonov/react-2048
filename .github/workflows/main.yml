@@ -21,7 +21,7 @@ jobs:
 
       - name: Install pnpm
         run: |
-          curl -sL https://pnpm.io/install.sh | sh -
+          wget -qO- https://get.pnpm.io/install.sh | sh -
           echo 'export PATH=~/.pnpm/bin:$PATH' >> ~/.bashrc
 
       - name: Install dependencies
